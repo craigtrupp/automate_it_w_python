@@ -72,3 +72,29 @@ def multiplication_table(number):
 print(multiplication_table(3))
 print(multiplication_table(5))
 print(multiplication_table(8))
+
+
+## Quiz Question
+
+# Function should count how many event numbers exist in a sequence from 0 to to the given number where 0 counts as an even number 
+def even_numbers(n):
+    count = 0
+    current_number = 0
+    while current_number <= n: # Complete the while loop condition
+        if current_number % 2 == 0:
+            count += 1 # Increment the appropriate variable
+        current_number += 1 # Increment the appropriate variable
+    return count
+    
+print(even_numbers(25))   # Should print 13
+print(even_numbers(144))  # Should print 73
+print(even_numbers(1000)) # Should print 501
+print(even_numbers(0))    # Should print 1
+print(even_numbers(6)) # Should equal 4
+
+## Results
+# 13
+# 73
+# 501
+# 1
+# 4

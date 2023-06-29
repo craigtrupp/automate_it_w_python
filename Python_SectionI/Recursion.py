@@ -49,3 +49,28 @@ print(factorial(4))
 # Returning 6 for factorial of 3
 # Returning 24 for factorial of 4
 # 24
+
+
+def is_power_of(number, base):
+  # see if divisible (no remainder)
+  if number % base == 0:
+    # Start choping the tree (or number conition al check)
+    number = number / base
+    # if were down to having been divisible by itself for the below check else, keep slicing it down 
+    if number == base:
+      return True 
+    else:
+      return is_power_of(number, base)
+  else:
+    return False
+
+print(is_power_of(8,2)) 
+print(is_power_of(64,4))
+print(is_power_of(70,10))
+
+## Returns
+# True
+# True
+# False
+
+
