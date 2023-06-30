@@ -64,17 +64,13 @@ print(divisible(144, 17)) # Should be 9
 
 # 6 
 def even_numbers(maximum):
-
     return_string = "" # Initializes variable as a string
-
     # Complete the for loop with a range that includes all even numbers
     # up to and including the "maximum" value, but excluding 0.
     for number in range(2, maximum + 1, 2): 
-
         # Complete the body of the loop by appending the even number
         # followed by a space to the "return_string" variable.
         return_string +=  f'{number} '  
-
     # This .strip command will remove the final " " space at the end of
     # the "return_string".
     return return_string.strip() 
@@ -93,7 +89,7 @@ print(even_numbers(0))  # No numbers displayed
 # 2
 
 
-#9 End of nested for loop return
+#9 End of nested for loop return (last value setting for each is 4 (last value of range 5) and 16 which is last range vale of (14) .. 13 and then that + 3 )
 num1 = 0
 num2 = 0
 for x in range(5):
@@ -102,4 +98,4 @@ for x in range(5):
         num2 = y + 3
 
 print(num1 + num2)
-
+## 20 
