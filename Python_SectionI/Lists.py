@@ -199,3 +199,8 @@ Ken is 30 years old and works as Chef
 Pat is 35 years old and works as Lawyer
 Amanda is 25 years old and works as Engineer
 """
+
+## Readout
+# Ken is 30 years old and works as Chef
+# Pat is 35 years old and works as Lawyer
+# Amanda is 25 years old and works as Engineer
