@@ -94,3 +94,41 @@ print(describe_furniture(couch))
 ## Printouts
 # This piece of furniture is made of brown wood
 # This piece of furniture is made of red leather
+
+
+
+# Finish the "Stock_by_Material" method and iterate over the amount of each item of a given material that is in stock. When you’re finished, the script should add up to 10 cotton clothing items.
+class Clothing:
+  stock={ 'name': [],'material' :[], 'amount':[]}
+  def __init__(self,name):
+    material = ""
+    self.name = name
+  def add_item(self, name, material, amount):
+    self.stock['name'].append(self.name)
+    self.stock['material'].append(self.material)
+    self.stock['amount'].append(amount)
+  def Stock_by_Material(self, material):
+    count=0
+    n=0
+    for item in self.stock['material']:
+      if item == material:
+        count += self.stock['amount'][n]
+        n+=1
+    return count
+
+class shirt(Clothing):
+  material="Cotton"
+class pants(Clothing):
+  material="Cotton"
+  
+polo = shirt("Polo")
+sweatpants = pants("Sweatpants")
+polo.add_item(polo.name, polo.material, 4)
+sweatpants.add_item(sweatpants.name, sweatpants.material, 6)
+current_stock = polo.Stock_by_Material("Cotton")
+print(current_stock)
+
+## Here is your output: 10
+
+## Nice job! You successfully used composition to reuse the Clothing.stock attribute and stock_by_material() function of
+## the Clothing class to take stock of the Cotton shirts and pants!
